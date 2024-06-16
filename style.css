@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.wrapper {
+  color: #696969;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+.text {
+  height: 55px;
+  overflow: hidden;
+}
+.text > div > span {
+  color: #fff;
+  padding: 0 20px 5px;
+  height: 43px;
+  margin-bottom: 50px;
+  display: inline-block;
+}
+.text div:first-child {
+  animation: show 7s linear infinite;
+}
+@keyframes show {
+  0% {
+    margin-top: -280px;
+  }
+  5% {
+    margin-top: -180px;
+  }
+  33% {
+    margin-top: -180px;
+  }
+  38% {
+    margin-top: -90px;
+  }
+  66% {
+    margin-top: -90px;
+  }
+  71% {
+    margin-top: 0;
+  }
+  99.99% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -280px;
+  }
+}
+.text div span {
+  background-color: #378562;
+}
+.text div:first-child span {
+  background-color: #0c7da7;
+}
+.text div:last-child span {
+  background-color: #be5108;
+}
